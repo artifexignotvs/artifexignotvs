@@ -1,11 +1,11 @@
-# ARTIFEX IGNOTVS
+# ARTIFEX IGNOTUS
 
 > EX SILENTIO, SIGNA.
 
 **OFFICINA IGNOTA**  
 Defensive tools for exposed systems, hidden signals, and authorized research.
 
-## INSTRVMENTA / Tools
+## INSTRUMENTA / Tools
 
 - **CLAVIS** — repository security posture scanner
 - **LIMEN** — passive attack-surface and OSINT mapping
