@@ -1,26 +1,37 @@
-# ARTIFEX IGNOTUS
+# ARTIFEX IGNOTVS
 
 > EX SILENTIO, SIGNA.
 
-**OFFICINA IGNOTA**  
-Defensive tools for exposed systems, hidden signals, and authorized research.
+Research-oriented defensive tooling for maintainers, auditors, and authorized security teams. Work is local-first where practical, and claims are tied to public source, tests, CI, or reproducible artifacts when those materials are available.
 
-## INSTRUMENTA / Tools
+## Available
 
-- **CLAVIS** — repository security posture scanner
-- **LIMEN** — passive attack-surface and OSINT mapping
-- **SIGILLVM** — audit and report generation
+No public tools are available yet.
+
+## Private alpha
+
+### CLAVIS
+
+**Private alpha / preparing for public release**
+
+A local-first CLI for repository security-hygiene assessment. It examines repository metadata, automation workflows, dependency signals, environment-file exposure, and token-like patterns. Sensitive values are redacted by default.
+
+Evidence being prepared for public review includes Python 3.11 and 3.12 CI, tests with branch coverage, a deterministic example report, and reproducible wheel and sdist checks.
+
+## In development
+
+- CLAVIS public-readiness work: scanner edge cases, policy-based exit codes, CI, packaging, and documentation.
+
+## Concepts
+
+- **LIMEN** — attack-surface and exposure mapping
+- **SIGILLVM** — assessment report generation
 - **ARX** — local-first security labs
-- **VIGIL** — exposure monitoring toolkit
+- **VIGIL** — exposure monitoring
+- **EXCVBIAE** — defensive watch and triage
 
-## PRINCIPIA / Principles
+These are research concepts. No public implementations are claimed.
 
-Authorized testing only.  
-Local-first when possible.  
-No secrets exposed.  
-No unnecessary noise.  
-Tools before theatrics.
+## Verification
 
-## STATUS
-
-Building the first instruments.
+Public source, CI results, releases, documentation, and methodology will be linked here only when they are available. No benchmark, adoption, or effectiveness claims are made without public evidence.
