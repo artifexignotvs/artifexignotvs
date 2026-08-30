@@ -14,9 +14,9 @@ No public tools are available yet.
 
 **Private alpha / preparing for public release**
 
-A local-first CLI for repository security-hygiene assessment. It examines repository metadata, automation workflows, dependency signals, environment-file exposure, and token-like patterns. Sensitive values are redacted by default.
+A local-first CLI for repository security-hygiene assessment. It examines repository metadata, automation workflows, dependency signals, environment-file exposure, and token-like patterns. Detected sensitive values are redacted by default.
 
-Evidence being prepared for public review includes Python 3.11 and 3.12 CI, tests with branch coverage, a deterministic example report, and reproducible wheel and sdist checks.
+Evidence being prepared for public review includes Python 3.11 and 3.12 CI, tests with branch coverage, a deterministic example report, and wheel and sdist reproducibility checks in the tested Linux CI environments.
 
 ## In development
 
