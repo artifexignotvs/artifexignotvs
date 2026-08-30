@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-labelledby="sigil-title sigil-desc" focusable="false">
+  <title id="sigil-title">ARTIFEX IGNOTVS sigil</title>
+  <desc id="sigil-desc">A vertical sword crosses an eight-pointed star within a dark shield outlined in antique gold.</desc>
+  <path d="M90 10 151 32v51c0 42-24 70-61 87-37-17-61-45-61-87V32Z" fill="#0B0D10" stroke="#9AA0A8" stroke-linejoin="round" stroke-width="7" opacity=".45"/>
+  <path d="M90 10 151 32v51c0 42-24 70-61 87-37-17-61-45-61-87V32Z" fill="#0B0D10" stroke="#C2A563" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M90 20 141 39v44c0 35-19 59-51 75-32-16-51-40-51-75V39Z" fill="none" stroke="#C2A563" stroke-linejoin="round" stroke-width="1.5" opacity=".5"/>
+  <circle cx="90" cy="24" r="5" fill="#C2A563"/>
+  <path d="M87 29h6v17h-6zM73 45c9-3 25-3 34 0l-5 7H78Z" fill="#C2A563"/>
+  <path d="m86 51 8 0-2 86-2 10-2-10Z" fill="#9AA0A8" stroke="#C2A563" stroke-linejoin="round" stroke-width="1.5"/>
+  <path d="m90 58 5 22 18-13-9 20 22 3-22 5 13 18-20-9-7 22-5-22-18 13 9-20-22-3 22-5-13-18 20 9Z" fill="#C2A563" stroke="#0B0D10" stroke-linejoin="round" stroke-width="2"/>
+  <circle cx="90" cy="92" r="5" fill="#0B0D10" stroke="#9AA0A8" stroke-width="1.5"/>
+</svg>

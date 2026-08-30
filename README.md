@@ -1,37 +1,28 @@
-# ARTIFEX IGNOTVS
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/sigil-dark.svg">
+    <img src="./assets/sigil-light.svg" width="112" height="112" alt="ARTIFEX IGNOTVS sigil: a sword and eight-pointed star within a shield.">
+  </picture>
+</p>
 
-> EX SILENTIO, SIGNA.
+<h1 align="center">ARTIFEX IGNOTVS</h1>
 
-Research-oriented defensive tooling for maintainers, auditors, and authorized security teams. Work is local-first where practical, and claims are tied to public source, tests, CI, or reproducible artifacts when those materials are available.
+<p align="center"><strong>OFFICINA IGNOTA · THE UNKNOWN WORKSHOP</strong></p>
 
-## Available
+<p align="center">
+  <strong>EX SILENTIO, SIGNA.</strong><br>
+  <em>From silence, signals.</em>
+</p>
 
-No public tools are available yet.
+<p align="center">Defensive intelligence tools for exposed systems, hidden signals, and authorized research — local-first where possible.</p>
 
-## Private alpha
+## PRINCIPIA
 
-### CLAVIS
+- Explicit authorization.
+- Local processing and data minimization where practical.
+- Inspectable methods and reproducible evidence.
+- Defensive outcomes over spectacle.
 
-**Private alpha / preparing for public release**
+## IN OFFICINA
 
-A local-first CLI for repository security-hygiene assessment. It examines repository metadata, automation workflows, dependency signals, environment-file exposure, and token-like patterns. Detected sensitive values are redacted by default.
-
-Evidence being prepared for public review includes Python 3.11 and 3.12 CI, tests with branch coverage, a deterministic example report, and wheel and sdist reproducibility checks in the tested Linux CI environments.
-
-## In development
-
-- CLAVIS public-readiness work: scanner edge cases, policy-based exit codes, CI, packaging, and documentation.
-
-## Concepts
-
-- **LIMEN** — attack-surface and exposure mapping
-- **SIGILLVM** — assessment report generation
-- **ARX** — local-first security labs
-- **VIGIL** — exposure monitoring
-- **EXCVBIAE** — defensive watch and triage
-
-These are research concepts. No public implementations are claimed.
-
-## Verification
-
-Public source, CI results, releases, documentation, and methodology will be linked here only when they are available. No benchmark, adoption, or effectiveness claims are made without public evidence.
+CLAVIS is currently in private alpha and is not publicly available.
