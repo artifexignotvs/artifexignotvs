@@ -1,26 +1,28 @@
-# ARTIFEX IGNOTUS
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/sigil-dark.svg">
+    <img src="./assets/sigil-light.svg" width="112" height="112" alt="ARTIFEX IGNOTVS sigil: a sword and eight-pointed star within a shield.">
+  </picture>
+</p>
 
-> EX SILENTIO, SIGNA.
+<h1 align="center">ARTIFEX IGNOTVS</h1>
 
-**OFFICINA IGNOTA**  
-Defensive tools for exposed systems, hidden signals, and authorized research.
+<p align="center"><strong>OFFICINA IGNOTA · THE UNKNOWN WORKSHOP</strong></p>
 
-## INSTRUMENTA / Tools
+<p align="center">
+  <strong>EX SILENTIO, SIGNA.</strong><br>
+  <em>From silence, signals.</em>
+</p>
 
-- **CLAVIS** — repository security posture scanner
-- **LIMEN** — passive attack-surface and OSINT mapping
-- **SIGILLVM** — audit and report generation
-- **ARX** — local-first security labs
-- **VIGIL** — exposure monitoring toolkit
+<p align="center">Defensive intelligence tools for exposed systems, hidden signals, and authorized research — local-first where possible.</p>
 
-## PRINCIPIA / Principles
+## PRINCIPIA
 
-Authorized testing only.  
-Local-first when possible.  
-No secrets exposed.  
-No unnecessary noise.  
-Tools before theatrics.
+- Explicit authorization.
+- Local processing and data minimization where practical.
+- Inspectable methods and reproducible evidence.
+- Defensive outcomes over spectacle.
 
-## STATUS
+## IN OFFICINA
 
-Building the first instruments.
+CLAVIS is currently in private alpha and is not publicly available.
