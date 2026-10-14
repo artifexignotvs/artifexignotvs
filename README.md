@@ -5,6 +5,12 @@
 <p align="center"><strong>Defensive security · Digital forensics · OSINT</strong></p>
 <p align="center">Small tools. Inspectable methods. Explicit boundaries.</p>
 
+## Studia
+
+My interests span cybersecurity, OSINT, software development and ethical hacking in authorized environments. I explore them through defensive security: building small tools, testing clear assumptions and documenting the limits of each finding.
+
+Current areas of study include secure coding, agent security, digital forensics and evidence handling. The projects below put that work into practice through HTTP policy checks, configuration reviews, integrity manifests and saved-page analysis.
+
 ## Instrumenta
 
 | Tool | What it does | Start here |
