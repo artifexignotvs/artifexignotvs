@@ -14,6 +14,10 @@
 | **[Vestigium Integrity](https://github.com/artifexignotvs/vestigium-integrity)** | Creates SHA-256 directory manifests and detects modified, missing and added entries. | Snapshot, verify, inspect differences |
 | **[Lucerna OSINT](https://github.com/artifexignotvs/lucerna-osint)** | Extracts links, destination hosts and metadata from saved HTML with source hashes and line references. | Offline evidence triage |
 
+## Relationes
+
+[Relatio 000 — Artifex Ignotvs](https://dev.to/artifexignotvs/artifex-ignotvs-relatio-000-1856) — An opening note on tools, evidence and method.
+
 ## Principia
 
 - **Evidence first.** Synthetic examples and regression tests accompany the tools.
