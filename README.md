@@ -1,6 +1,7 @@
-<p align="center"><img src="assets/mark.svg" width="96" height="96" alt="Question mark"></p>
+<p align="center"><img src="ignotvs-seal-777.png" width="96" height="96" alt="Artifex Ignotvs seal"></p>
 
-<h1 align="center">EX SILENTIO, TUTELA.</h1>
+<h1 align="center">Artifex Ignotvs</h1>
+<p align="center"><em>EX SILENTIO, TUTELA.</em></p>
 <p align="center"><strong>Defensive security · Digital forensics · OSINT</strong></p>
 <p align="center">Small tools. Inspectable methods. Explicit boundaries.</p>
 
