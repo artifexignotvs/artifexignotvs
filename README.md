@@ -3,55 +3,64 @@
 <h1 align="center">Artifex Ignotvs</h1>
 <p align="center"><em>EX SILENTIO, TUTELA.</em></p>
 <p align="center"><strong>Defensive security · Digital forensics · OSINT</strong></p>
-<p align="center">Small tools. Inspectable methods. Explicit boundaries.</p>
 
-## Featured: TESTIFEX
 
-Did that process run after the SSH login? Check the clocks before drawing a conclusion.
+## Start here: Access Assurance Lite
 
-**[TESTIFEX](https://github.com/artifexignotvs/testifex)** is an offline terminal workbench for selected SSH/sudo logs, journal JSON and explicit process-event JSONL. In its synthetic case, a login at `00:01:30` and a process record at `00:01:45` appear ordered. A declared ±30-second process-clock error changes that ordering from certain to possible within the interval model. Follow findings to the original bytes and inspect the assumptions; neither result proves a shared SSH session or an intrusion.
+**After access removal, can the original credential still reach the application?**
 
-[Try the synthetic field test](https://github.com/artifexignotvs/testifex/blob/main/docs/field-test.md) · [Download the 0.1.0a1 technical preview](https://github.com/artifexignotvs/testifex/releases/tag/v0.1.0a1)
+[Access Assurance Lite](https://github.com/artifexignotvs/access-assurance-lite) records a working baseline, then checks the same credentials after your administrative change. A separate positive-control identity helps distinguish subject-specific denial from a broken service.
 
-## Studia
+Public alpha. Free MIT-licensed source. Python 3.11+ on Linux. The separate commercial core remains private.
 
-My interests span cybersecurity, OSINT, software development and ethical hacking in authorized environments. I explore them through defensive security: building small tools, testing clear assumptions and documenting the limits of each finding.
+### Try the local demo
 
-Current areas of study include secure coding, agent security, digital forensics and evidence handling. The projects below put that work into practice through log correlation, HTTP policy checks, configuration reviews, integrity manifests and saved-page analysis.
+[Download `access-assurance-lite.pyz`](https://github.com/artifexignotvs/access-assurance-lite/releases/tag/v0.1.0-alpha.1), then run:
 
-## Instrumenta
+```sh
+python3 access-assurance-lite.pyz demo --directory ./first-demo
+```
 
-| Tool | What it does | Start here |
-| --- | --- | --- |
-| **[TESTIFEX](https://github.com/artifexignotvs/testifex)** | Reviews saved evidence with source-byte references, explicit clock bounds and temporal leads. | [Synthetic field test](https://github.com/artifexignotvs/testifex/blob/main/docs/field-test.md) |
-| **[EXCUBITOR](https://github.com/artifexignotvs/excubitor)** | Correlates scan and authentication patterns with evidence windows in a terminal. | [Local synthetic demo](https://github.com/artifexignotvs/excubitor#try-the-local-demo) |
-| **[Relatio Workbench](https://github.com/artifexignotvs/relatio-workbench)** | Brings tool reports, access reviews and investigation notes into a local case workspace. | Browser-based evidence review |
-| **[Vallum HTTP](https://github.com/artifexignotvs/vallum-http)** | Audits saved or live HTTP response headers, cookie flags, transport and browser security policies. | Offline fixtures and JSON reports |
-| **[Limen MCP](https://github.com/artifexignotvs/limen-mcp)** | Reviews agent server configurations for exposed credentials, risky launchers and excessive container privileges. | Local-only configuration audit |
-| **[Vestigium Integrity](https://github.com/artifexignotvs/vestigium-integrity)** | Creates SHA-256 directory manifests and detects modified, missing and added entries. | Snapshot, verify, inspect differences |
-| **[Lucerna OSINT](https://github.com/artifexignotvs/lucerna-osint)** | Extracts links, destination hosts and metadata from saved HTML with source hashes and line references. | Offline evidence triage |
+Use a new output directory. The demo generates synthetic credentials, makes real HTTP requests to two local resources, writes evidence files and stops its server. It does not modify existing accounts.
 
-## Relationes
+- **VERIFIED:** the original valid subject credential is explicitly denied while both control probes succeed within the observation window.
+- **RESIDUAL:** valid subject access is still observed on at least one configured resource.
+- **UNKNOWN:** failure, stale data or ambiguity prevents a supported denial claim.
 
-[TESTIFEX preview — When a 15-second gap cannot establish order](https://artifexignotvs.hashnode.dev/testifex-preview-when-a-15-second-gap-cannot-establish-order) — A synthetic SSH-to-process review with explicit clock uncertainty and source references.
+The demo moves through denial, restored access, an outage, failed controls and recovery. Saved evidence is historical; its hashes do not authenticate the source. These observations do not establish that every session is gone.
 
-[EXCUBITOR 0.1.0 — Detection leads, in a terminal](https://artifexignotvs.hashnode.dev/excubitor-010-detection-leads-in-a-terminal) — A first run, input formats, and operational limits.
+**For your application:** you must implement the [cooperating probe endpoint](https://github.com/artifexignotvs/access-assurance-lite/blob/main/docs/PROTOCOL.md) on the authorization path being tested. A generic HTTP 403 is insufficient. Production compatibility and independent validation remain unproven.
 
-[Relatio 001 — What a matching hash proves](https://artifexignotvs.hashnode.dev/relatio-001-what-a-matching-hash-proves) — Integrity checks and the claims they can support.
+**How do you currently verify existing application access after offboarding?** [Share a synthetic example or demo feedback](https://github.com/artifexignotvs/access-assurance-lite/issues/new), without internal logs or credentials.
 
-[Relatio 000 — Artifex Ignotvs](https://dev.to/artifexignotvs/artifex-ignotvs-relatio-000-1856) — An opening note on tools, evidence and method.
+## Other work
 
-## Principia
+Cybersecurity, OSINT, software development, ethical hacking and defensive security.
+The current focus is access verification; these tools address related investigation tasks.
 
-- **Evidence first.** Synthetic examples and regression tests accompany the tools.
-- **Bounded claims.** Every project explains what it checks and what it cannot establish.
-- **Local where practical.** Command-line tools use the standard library. Network activity is explicit.
-- **Readable by design.** English documentation, Latin source annotations, structured output.
+<details>
+<summary>Explore the tool collection</summary>
 
-## In progress
+| Project | Practical task |
+| --- | --- |
+| [EXCUBITOR](https://github.com/artifexignotvs/excubitor) | Correlate scan and authentication patterns in saved or live logs. |
+| [Limen MCP](https://github.com/artifexignotvs/limen-mcp) | Review server configurations before launching them. |
+| [TESTIFEX](https://github.com/artifexignotvs/testifex) | Investigate saved events with explicit clock uncertainty. |
+| [PROBENTIUM](https://github.com/artifexignotvs/probentium) | Review conditional findings and source-byte witnesses offline. |
+| [CUSTODIA](https://github.com/artifexignotvs/custodia) | Run static binary analysis within verified Linux boundaries. |
+| [FRACTURA](https://github.com/artifexignotvs/fractura) | Plan access controls while preserving required service paths. |
+| [LACUNA](https://github.com/artifexignotvs/lacuna) | Test how missing or degraded telemetry changes detector results. |
+| [Lucerna OSINT](https://github.com/artifexignotvs/lucerna-osint) | Triage saved HTML with link inventories and source references. |
+| [Vallum HTTP](https://github.com/artifexignotvs/vallum-http) | Inspect HTTP headers, cookies and transport policy. |
+| [Vestigium Integrity](https://github.com/artifexignotvs/vestigium-integrity) | Compare directory manifests for changed, added and missing evidence. |
+| [Relatio Workbench](https://github.com/artifexignotvs/relatio-workbench) | Organize tool reports, access reviews and investigation notes locally. |
 
-These are initial releases, built to be inspected and improved. Development focuses on reproducible investigations, comparisons between checks and portable case records.
+</details>
 
-Useful contributions start with a reproducible case, a small synthetic fixture and a clear expected result. Keep private evidence and credentials out of public issues; consult each project's security policy.
+## Field notes
 
-<p align="center"><em>Dubita. Examina. Protege.</em></p>
+[Checking the application after access removal](https://artifexignotvs.hashnode.dev/access-assurance-lite-checking-the-application-after-access-removal) · [Why a 15-second gap cannot establish event order](https://artifexignotvs.hashnode.dev/testifex-preview-when-a-15-second-gap-cannot-establish-order)
+
+[Project overview and editions](https://artifexignotvs.github.io/access-assurance/) · [X](https://x.com/artifexignotvs) · [Bluesky](https://bsky.app/profile/artifexignotvs.bsky.social)
+
+*Dubita. Examina. Protege.*
