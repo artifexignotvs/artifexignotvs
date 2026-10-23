@@ -4,6 +4,25 @@
 <p align="center"><em>EX SILENTIO, TUTELA.</em></p>
 <p align="center"><strong>Defensive security · Digital forensics · OSINT</strong></p>
 
+I build tools to check whether a security change actually took effect.
+Access removal, PHP updates and evidence review share a requirement:
+an incomplete observation must remain visible.
+
+## Latest field note: a fix accepted upstream
+
+A PHP process-inspection gap found during RELIQUA's comparison was independently
+reproduced by the `php2shell-check` maintainer. The fix and eleven regression
+cases were incorporated in version 3.0.0; the maintainer's 3.0.1 follow-up
+addressed another portability issue exposed by those cases.
+
+[Read the case study](https://github.com/artifexignotvs/reliqua/blob/main/docs/UPSTREAM_CASE_STUDY.md)
+· [Upstream confirmation](https://github.com/EXT-IT/php2shell-check/pull/1#issuecomment-6361957236)
+· [Try the current isolated comparison](https://github.com/artifexignotvs/reliqua/blob/main/docs/FIELD_TEST.md)
+
+That is one accepted contribution, not a claim of customer adoption. The
+RELIQUA field test asks whether fresh evidence from every declared PHP node
+helps your update review. It needs no production data; setup blockers and
+negative feedback are welcome. The comparator's original defect is now fixed.
 
 ## Start here: Access Assurance Lite
 
@@ -36,13 +55,15 @@ The demo moves through denial, restored access, an outage, failed controls and r
 ## Other work
 
 Cybersecurity, OSINT, software development, ethical hacking and defensive security.
-The current focus is access verification; these tools address related investigation tasks.
+Access verification is the longer-term product direction. RELIQUA is the current
+bounded field experiment; the remaining tools address related investigation tasks.
 
 <details>
 <summary>Explore the tool collection</summary>
 
 | Project | Practical task |
 | --- | --- |
+| [RELIQUA](https://github.com/artifexignotvs/reliqua) | Review PHP runtime updates and require fresh reports from every declared node. |
 | [EXCUBITOR](https://github.com/artifexignotvs/excubitor) | Correlate scan and authentication patterns in saved or live logs. |
 | [Limen MCP](https://github.com/artifexignotvs/limen-mcp) | Review server configurations before launching them. |
 | [TESTIFEX](https://github.com/artifexignotvs/testifex) | Investigate saved events with explicit clock uncertainty. |
@@ -59,6 +80,7 @@ The current focus is access verification; these tools address related investigat
 
 ## Field notes
 
+[An unreadable PHP worker is not a clean result](https://github.com/artifexignotvs/reliqua/blob/main/docs/UPSTREAM_CASE_STUDY.md) ·
 [Checking the application after access removal](https://artifexignotvs.hashnode.dev/access-assurance-lite-checking-the-application-after-access-removal) · [Why a 15-second gap cannot establish event order](https://artifexignotvs.hashnode.dev/testifex-preview-when-a-15-second-gap-cannot-establish-order)
 
 [Project overview and editions](https://artifexignotvs.github.io/access-assurance/) · [X](https://x.com/artifexignotvs) · [Bluesky](https://bsky.app/profile/artifexignotvs.bsky.social)
